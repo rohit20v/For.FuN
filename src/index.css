@@ -1,0 +1,20 @@
+.glowbtn{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
+
+}
+
+.glowbtn:hover{
+    box-shadow:
+            inset 0 0 20px #fff,      /* inner white */
+            inset 20px 0 320px red,   /* inner left magenta short */
+            inset -20px 0 30px pink,  /* inner right cyan short */
+            inset -20px 0 30px deeppink, /* inner right cyan broad */
+            0 0 10px #fff,            /* outer white */
+            10px 0 42px indianred;
+    color: white;
+    text-shadow:0px 0px 30px white;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
