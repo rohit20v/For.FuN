@@ -4,4 +4,3 @@ function github(){
         window.location.href = "https://github.com/rohit20v";
     });
 }
-
