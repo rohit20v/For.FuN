@@ -2,14 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="wordscramble.css" crossorigin>
+    <style>
+        body {
+            background: url("/resources/background/keyboard_bg.gif");
+            background-size: cover;
+        }
+    </style>
+    <script> src = "wordscramble.ts" </script>
     <title>Word Scramble</title>
 </head>
 <body>
 <div class="container-fluid">
     <div style="display: grid; place-items: center; min-height: 100vh;">
-        <div class="container d-flex justify-content-center">
-            <div class="shadow-lg border-3 ">
-                <h1 class="shadow-lg"> </h1>
+        <div class="container d-flex justify-content-center shadow border-3 rounded-4 border-0 animate"
+             style="height: 50%; min-width: 42%; width: 50%; backdrop-filter: blur(12px) contrast(111%) brightness(105%)">
+            <div class="row">
+                <div class="col-2">
+                    <div class="mt-5 mb-5 p-3 text-center">
+                        <h1 id="scrambledWord"
+                            style=" font-family: 'Quicksand', sans-serif; font-optical-sizing: auto; font-style: normal">
+                            sdfsdfssss
+                        </h1>
+                    </div>
+                    <div class="mt-5 mb-4">
+                        <button type="button" onclick="generateScramble()" class="btn btn-primary">press</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

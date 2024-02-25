@@ -1,0 +1,14 @@
+.animate {
+    animation-duration: .8s;
+    animation-name: animate-fade;
+    animation-fill-mode: backwards;
+}
+
+@keyframes animate-fade {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
