@@ -1,2 +1,2 @@
-# Blackjack
-- A pretty simple blackjack webapp written in js for some practice. It's could have some bugs as it's a practice i kinda went easy on it. [posting here just to keep track of my work]
+# Rolling.FuN
+- I'll be posting here small web games and general projects and try to get better at JS and Typescript. [posting here just to keep track of my progress]
