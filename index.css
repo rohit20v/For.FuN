@@ -1,0 +1,10 @@
+#blackjack_div:hover{
+    scale: 105%;
+    background-color: #fff;
+    box-shadow:
+            0 0 100px 10px #fff,  /* inner white */
+            0 0 10px 5px cornflowerblue, /* middle magenta */
+            0 0 8px 10px #0ff; /* outer cyan */
+    border: none;
+    transition: 0.25s ease-in-out;
+}

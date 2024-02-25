@@ -38,6 +38,6 @@ function stop() {
 }
 
 function refresh(){
-    window.location.reload("Refresh")
+    window.location.reload()
 }
 
