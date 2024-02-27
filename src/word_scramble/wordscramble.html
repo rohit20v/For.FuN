@@ -8,11 +8,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="wordscramble.css" crossorigin>
-    <script> src = "wordscramble.ts" </script>
+    <script src="wordscramble.js"></script>
+
+
     <style>
         body {
             background-image: url("/resources/background/typing.gif");
             background-size: cover;
+            background-position: center;
         }
     </style>
     <title>Word Scramble</title>
@@ -22,16 +25,29 @@
     <div style="display: grid; place-items: center; min-height: 100vh;">
         <div class="container d-flex justify-content-center shadow border-3 rounded-4 border-0 animate"
              style="height: 50%; min-width: 42%; width: 50%; backdrop-filter: blur(12px) contrast(111%) brightness(105%)">
-            <div class="row">
-                <div class="col-2">
+            <div class="col">
+                <div class="row">
                     <div class="mt-5 mb-5 p-3 text-center">
                         <h1 id="scrambledWord"
                             style=" font-family: 'Quicksand', sans-serif; font-optical-sizing: auto; font-style: normal">
-                            sdfsdfssss
+
                         </h1>
                     </div>
-                    <div class="mt-5 mb-4">
-                        <button type="button" onclick="generateScramble()" class="btn btn-primary">press</button>
+                    <div id="input_div">
+                        <div class="text-center p-2">
+                            <input type="text" class="rounded p-2 border-0 shadow text-center" id="word"
+                                   style="display: inline; width: auto" placeholder="Example input">
+                        </div>
+                        <div class="mt-5 mb-4 text-center btn-group-sm" id="btn-group">
+                            <button id="scramble" type="button" onclick='getScramble()'
+                                    class="btn btn-warning w-25 btn-lg p-2 rounded-start-4 fw-medium shadow">
+                                Skip
+                            </button>
+                            <button id="check" type="button" onclick='checkScramble()'
+                                    class=" btn btn-info p-2 w-25 btn-lg rounded-end-4 fw-medium shadow">
+                                GO!
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>

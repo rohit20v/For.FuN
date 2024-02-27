@@ -12,3 +12,20 @@
         opacity: 1;
     }
 }
+
+.transformPos{
+    /*animation-duration: .6s;*/
+    /*animation-name: transform-pos;*/
+    /*animation-fill-mode: forwards;*/
+    animation: transform-pos .5s ease-in-out forwards;
+
+}
+
+@keyframes transform-pos{
+    0%{
+        transform: translateY(0%);
+    }
+    100%{
+        transform: translateY(42%);
+    }
+}
