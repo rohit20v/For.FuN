@@ -1,8 +1,15 @@
+import MicroModal from 'micromodal';
+
 let sum = 0
-let pc_num = Math.floor(Math.random() * 21) + 1
+let pc_num = Math.floor(Math.random() * 11) + 1
+let number = 0
 
 function draw() {
-    let number = Math.floor(Math.random() * 21) + 1
+    let ace = Math.floor(Math.random() * 8) + 1
+    if (ace === 4){
+
+    }
+    number = Math.floor(Math.random() * 11) + 1
     sum += number
     document.getElementById("current_card").textContent = "Card: " + number
     document.getElementById("total_card").textContent = "Sum: " + sum
