@@ -4,6 +4,11 @@
     animation-fill-mode: backwards;
 }
 
+/*#input_div{*/
+/*    border: 1px solid red;*/
+/*    transition: ease;*/
+/*}*/
+
 @keyframes animate-fade {
     0% {
         opacity: 0;
