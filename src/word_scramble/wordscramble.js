@@ -4,10 +4,6 @@ let enter = document.querySelector("#check");
 // let input = document.querySelector("#input_div");
 
 function getScramble() {
-    // document.addEventListener("check", () => {
-    //     document.getElementById("input_div").classList.add("transformPos")
-    // }, {once: true})
-    // input.reset();
     let word = scramble[Math.floor(Math.random() * scramble.length)]
     console.log(word)
     let scrambled = word.split("");
@@ -28,8 +24,9 @@ function checkScramble() {
     console.log("----------\n" + cleanWord);
     if (cleanWord === word.toLowerCase()) {
         console.log("YIPPIE");
+        // word.value = " ";
         getScramble();
-    }else{
+    }else if (cleanWord !== word.toLowerCase()){
         document.querySelector("#input_div").classList.add("error");
         setTimeout(function() {
             document.querySelector("#input_div").classList.remove('error');
@@ -38,12 +35,8 @@ function checkScramble() {
 }
 document.addEventListener("keydown", function(event) {
     // If the user presses the "Enter" key on the keyboard
-    console.log(event.key)
-    checkScramble()
+    if(event.keyCode === 13){
+        checkScramble()
+    }
 });
 
-// const skipBtn = document.querySelector("#scramble")
-// skipBtn.addEventListener("click", () => {
-//     getScramble();
-// })
-//
